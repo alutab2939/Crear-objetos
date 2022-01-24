@@ -22,4 +22,4 @@ sudo useradd -g Sis_informacion -d /home/usu_sinformacion -m -s /bin/bash usu_si
 sudo useradd -g Des_software -d /home/usu_desarrollo -m -s /bin/bash usu_desarrollo 
 sudo useradd -g Exp_software -d /home/usu_explotacion -m -s /bin/bash usu_explotacion
 
-#Dar permisos
+
