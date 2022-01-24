@@ -1,0 +1,25 @@
+#Crear arbol
+sudo mkdir proyectos
+cd proyectos
+sudo touch Proyecto1.pdf
+sudo touch Proyecto2.pdf
+sudo mkdir pruebas
+sudo mkdir src
+cd pruebas
+sudo touch prueba1.pdf
+sudo touch prueba2.pdf
+cd src
+sudo touch app1.sh
+sudo touch app2.sh
+
+#Crear grupos
+sudo groupadd Sis_informacion
+sudo groupadd Des_software
+sudo groupadd Exp_software
+
+#Crear usuarios
+sudo useradd -g Sis_informacion -d /home/usu_sinformacion -m -s /bin/bash usu_sinformacion
+sudo useradd -g Des_software -d /home/usu_desarrollo -m -s /bin/bash usu_desarrollo 
+sudo useradd -g Exp_software -d /home/usu_explotacion -m -s /bin/bash usu_explotacion
+
+#Dar permisos
