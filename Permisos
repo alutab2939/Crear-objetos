@@ -1,0 +1,23 @@
+#Dar permisos del grupo Sis_informacion
+sudo setacl -m g:Sis_informacion:rwx /home/administrador/proyectos
+sudo setacl -m g:Sis_informacion:rwx /home/administrador/proyectos/pruebas/
+sudo setacl -m g:Sis_informacion:rwx /home/administrador/proyectos/src/
+
+#Dar permisos del grupo Des_software
+sudo setacl -m g:Des_software:rwx /home/administrador/proyectos/src
+
+#Dar permisos al grupo Exp_software
+sudo setacl -m g:Exp_software:rwx /home/administrador/proyectos/pruebas/
+sudo setacl -m g:Exp_software:rx /home/administrador/proyectos/src
+
+#Herencia del grupo Sis_informacion
+sudo setacl -R -m g:Sis_informacion:rwx /home/administrador/proyectos
+
+#Herencia del grupo Des_software
+sudo setacl -R -m g:Des_software:rwx /home/administrador/proyectos/src
+
+#Herencia del grupo Exp_software
+sudo setacl -R -m g:Exp_software:rwx /home/administrador/proyectos/pruebas
+sudo setacl -R-m g:Exp_software:rx /home/administrador/proyectos/src
+
+#Quitar permisos a other de todas las carpetas
