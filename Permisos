@@ -29,3 +29,7 @@ sudo setfacl -m other:0 /home/administrador/proyectos/src
 sudo chmod -R 770 proyectos/
 sudo chmod -R 770 proyectos/pruebas
 sudo chmod -R 770 proyectos/src
+
+#permiso de ejecucion para desarrollo y explotacion
+sudo setfacl -m g:Des_software:x /home/administrador/proyectos
+sudo setfacl -m g:Exp_software:x /home/administrador/proyectos
