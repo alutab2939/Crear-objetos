@@ -1,7 +1,7 @@
 #Dar permisos del grupo Sis_informacion
 sudo setfacl -m g:Sis_informacion:rwx /home/administrador/proyectos
 sudo setfacl -m g:Sis_informacion:rwx /home/administrador/proyectos/pruebas/
-sudo setfacl -m g:Sis_informacion:rwx /home/administrador/proyectos/src/zr
+sudo setfacl -m g:Sis_informacion:rwx /home/administrador/proyectos/src/
 
 #Dar permisos del grupo Des_software
 sudo setfacl -m g:Des_software:rwx /home/administrador/proyectos/src
@@ -24,3 +24,8 @@ sudo setfacl -d -R -m g:Exp_software:rx /home/administrador/proyectos/src
 sudo setfacl -m other:0 /home/administrador/proyectos
 sudo setfacl -m other:0 /home/administrador/proyectos/pruebas
 sudo setfacl -m other:0 /home/administrador/proyectos/src
+
+#chmod
+sudo chmod -R 770 proyectos/
+sudo chmod -R 770 proyectos/pruebas
+sudo chmod -R 770 proyectos/src
