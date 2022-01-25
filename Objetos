@@ -23,5 +23,4 @@ sudo useradd -g Des_software -d /home/usu_desarrollo -m -s /bin/bash usu_desarro
 sudo useradd -g Exp_software -d /home/usu_explotacion -m -s /bin/bash usu_explotacion
 
 #Poner contraseñas usuarios
-
-
+sudo passwd "usuario"
